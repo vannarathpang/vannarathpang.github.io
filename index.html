@@ -1,0 +1,95 @@
+<!--
+ File: /~vpang/index.html
+ COMP 4610 Assignment 2: Creating Your First Web Page
+ Vannarath Pang, UMass Lowell Computer Science, vpang@cs.uml.edu
+ Copyright (c) 2020 by Vannarath N Pang. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the author.
+ updated by VP on September 22, 2020 at 7:30 PM
+
+ This webpage displays basic information regarding myself and my future assignments going forward.
+-->
+
+<!-- I followed the CSS Crash Course by Traversy Media on YouTube as a basic foundation for my website. https://youtu.be/yfoY53QXEnI -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vannarath Pang's Website</title>
+    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <!-- Body class, contains main header of website displayed at the top. -->
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <h1>&gt;&gt; Welcome to my world &lt;&lt;</h1>
+      </div>
+    </header>
+
+<!-- Main Navigation Bar with links using a -->
+<nav id="navbar">
+  <div class="container">
+    <h3>COMP 4610</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Highlight, showcase of website -->
+<section id="showcase">
+  <div class="container">
+    <h2>Vannarath Pang</h2>
+    <h6>COMP 4610 GUI Programming I</h6>
+  </div>
+</section>
+
+<!-- Main Section of Website -->
+<div class="container">
+  <section id="main">
+    <h2>Welcome To My Page!</h2>
+    <p>This page will be the main index of my work for class COMP 4610 - GUI Programming I!
+      <br>
+      <br>
+      Here on the homepage, you'll find the main directory to all of my assignments for the semester.
+      <br>
+      This website will also feature some of my personal work which showcase my passion for photography and videography.
+      <br>
+      <br>
+      Thanks for stopping by!
+    </p>
+  </section>
+
+<!-- Side bar with links to homework assignments -->
+<aside id="sidebar">
+  <h2>&gt;&gt; HW Directory &lt;&lt;</h2>
+  <ul>
+    <li><a href="index.html">Assignment 2</a></li>
+    <li><a href="HW3/index.html">Assignment 3</a></li>
+    <li><a href="#">Assignment 4</a></li>
+    <li><a href="#">Assignment 5</a></li>
+    <li><a href="#">Assignment 6</a></li>
+    <li><a href="#">Assignment 7</a></li>
+    <li><a href="#">Assignment 8</a></li>
+  </ul>
+</aside>
+</div>
+
+<!-- Footer -->
+<footer id="main-footer">
+  <p>Copyright &copy; 2020 My Website</p>
+  <p>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!"/>
+      </a>
+  </p>
+</footer>
+</body>
+</html>

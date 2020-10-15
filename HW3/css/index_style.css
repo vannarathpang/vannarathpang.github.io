@@ -1,0 +1,285 @@
+/*
+ File: /~vpang/css/index_style.css
+ COMP 4610 Assignment 2: Creating Your First Web Page
+ Vannarath Pang, UMass Lowell Computer Science, vpang@cs.uml.edu
+ Copyright (c) 2020 by Vannarath N Pang. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the author.
+ updated by VP on September 22, 2020 at 7:30 PM
+
+ This file contains all of the CSS code used to format my HTML webpage.
+
+I followed the CSS Crash Course by Traversy Media on YouTube as a basic foundation for my website. https://youtu.be/yfoY53QXEnI
+/*
+
+/*
+Color Scheme
+TIDE (light grey) - #bbb7b1
+GREEN KELP (dark green) - #203121
+VERDIGRIS (olive green)- #5c6134
+RIVER BED (grey)- #48595e
+*/
+
+/* Imports Google Fonts for use */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap');
+
+/* ---- INDEX.HTML STYLING HERE ---- */
+
+/* Main body */
+body{
+  background-color:#bbb7b1;
+  color: #fff;
+  line-height: 1.6em;
+  margin:0;
+  text-align: center;
+}
+
+/* Website Container -- allows page to scale to certain width */
+.container{
+  width: 80%;
+  margin:auto;
+  overflow:hidden;
+}
+/* Change Top Main Header */
+#main-header{
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #203121;
+  color:#fff;
+}
+
+/* Navigation Bar */
+#navbar{
+  background-color: #5c6134;
+  color:#000;
+}
+
+/* Changes header in navigation bar */
+#navbar h3{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  color:#fff;
+  letter-spacing: 5px;
+  float:left;
+}
+
+/* Changes navigation bar links -- displays them inline/horizontal */
+#navbar ul{
+  padding-top: 5px;
+  float:right;
+  list-style: none;
+}
+
+#navbar li{
+  display:inline;
+}
+
+#navbar a{
+  font-family: 'Bebas Neue', cursive;
+  color:#fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding-right: 15px;
+}
+
+#navbar a:hover{
+  color:#000;
+  text-decoration: underline;
+}
+
+/* Background img for showcase section */
+#showcase{
+  background-image: url('../images/showcase.jpg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height:400px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Showcase Header -- displays text on the background img */
+#showcase h2{
+  font-family: 'Bebas Neue', cursive;
+  color:#fff;
+  font-size:72px;
+  letter-spacing: 10px;
+  line-height: 1.6em;
+  padding-top: 50px;
+  margin-bottom:0;
+}
+
+#showcase h6{
+  font-family: 'Roboto', sans-serif;
+  color:#fff;
+  font-size: 24px;
+  letter-spacing: 15px;
+  margin: 0;
+}
+
+/* Main Paragraph -- floats 80% of the left, side bar floats 20% of the right */
+#main{
+  float:left;
+  width:80%;
+  padding:0 30px;
+  box-sizing: border-box;
+}
+
+#main h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  letter-spacing: 5px;
+}
+
+#main p::first-line{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+#main p{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Side Bar which floats to the right */
+#sidebar{
+  float:right;
+  text-align: center;
+  width: 20%;
+  background:#203121;
+  box-sizing: border-box;
+}
+
+#sidebar h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  letter-spacing: 3px;
+  background-color: #5c6134;
+  color: #fff;
+  height: 40px;
+  margin: 0;
+  padding-top:15px;
+}
+
+#sidebar ul{
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar li{
+  font-family: 'roboto', sans-serif;
+  font-size: 18px;
+  font-weight:bold;
+  padding: 0;
+}
+
+#sidebar a{
+  color:#fff;
+  text-decoration: none;
+}
+
+#sidebar a:hover{
+  color:#000;
+  text-decoration:underline;
+}
+
+/* Footer */
+#main-footer{
+  background: #48595e;
+  color:#000;
+  text-align: center;
+  padding:20px;
+  margin-top:40px;
+}
+
+/* ---- ABOUT ME PAGE STYLING ---- */
+/* This chunk formats three blocks using flex box. */
+.block-1 h3, .block-2 h3, .block-3 h3{
+  background-color: #203121;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin-top:0
+}
+
+.block-1 p, .block-2 p, .block-3 p{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin-top: -15px;
+  margin-bottom: 0;
+}
+
+.container-2{
+  display: flex;
+  justify-content: center;
+}
+
+.container-2 div{
+  border: 1px #fff dashed;
+  padding: 10px;
+  flex-basis: 25.6%;
+}
+
+.container img{
+  float: left;
+  border: 1px #fff solid;
+  margin-bottom: 5px;
+  margin-right: 25px;
+}
+
+#about-main h2{
+  background-color: #48595e;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+#about-me h3{
+  font-family: 'Verdana', sans-serif;
+  color: #48595e;
+  width: 100%;
+  text-align: left;
+}
+
+#about-me p{
+  font-family: 'Verdana', sans-serif;
+  font-size:12px;
+  color: #48595e;
+  width: 100%;
+  text-align: left;
+}
+
+#interest-header h2{
+  background-color: #48595e;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+#about-blocks .block-1, .block-2, .block-3{
+  background: #5c6134;
+  color: #fff;
+}
+
+/* Makes sure that Main & Footer stack on top of each other if page is minimized to a certain width*/
+@media(max-width:600px){
+  #navbar{
+    width: 100%;
+    float: none;
+  }
+  #main{
+    width:100%;
+    float:none;
+  }
+  #sidebar{
+    width:100%;
+    float:none;
+  }
+  #about-main{
+    width:100%;
+    float:none;
+  }
+  #about-blocks{
+    width:100%;
+    float:none;
+  }
+}

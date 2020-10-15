@@ -1,0 +1,196 @@
+/*
+ File: /~vpang/css/style.css
+ COMP 4610 Assignment 4: Creating Your First Web Page with Bootstrap
+ Vannarath Pang, UMass Lowell Computer Science, vpang@cs.uml.edu
+ Copyright (c) 2020 by Vannarath N Pang. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the author.
+ updated by VP on October 15th, 2020 at 7:30 PM
+
+ This file contains all of the CSS code used to format my Bootstrap webpage.
+
+ Used Drew Ryan's Bootstrap Intro as a basic foundation for website layout: https://www.youtube.com/watch?v=9cKsq14Kfsw
+/*
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* Set to fill whole page, set font and color */
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+/* Navbar -- adds padding and changes font size */
+.navbar{
+  padding: 20px;
+}
+.navbar-nav li{
+  padding-right: 15px;
+}
+.nav-link, .nav-dropdown{
+  font-size: 110% !important;
+}
+
+/* Carousel -- image fills whole row */
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+/* Positions caption to sit in the middle of the carousel */
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1{
+  font-size: 500%;
+  text-transform: uppercase;
+}
+.carousel-caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.btn-primary{
+  background-color: #5c6134;
+  border: 1px solid #5c6134;
+}
+.btn-primary:hover{
+  background-color: #203121;
+  border: 1px solid #203121;
+}
+
+/* Welcome, center with auto margin */
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+/* set HR to not fill whole row for cleaner look */
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* Font Awesome Icons -- change size and margin */
+.fa-keyboard, .fa-camera-retro, .fa-video, .fa-gamepad, .fa-camera, .fa-headphones{
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.padding{
+  padding-bottom: 40px;
+}
+
+/* Stretch button to fill row */
+.spoiler{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Allow GIFs to all be the same size without overlapping */
+.gif{
+  max-width: 100%;
+}
+
+/* Social Media icons, change size, color & padding */
+.social a{
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-facebook{
+  color: #3b5998;
+}
+
+.fa-twitter{
+  color: #00aced;
+}
+
+.fa-instagram{
+  color: #517fa8;
+}
+
+.fa-youtube{
+  color: #bb0000;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover{
+  color: #d5d5d5;
+}
+
+
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%
+}
+
+/* Media Queries */
+/* Adjust certain sizes of elements at specific screen sizes for better response */
+@media (max-width: 992px) {
+ .social a{
+   font-size: 4em;
+   padding: 2rem;
+ }
+
+@media (max-width: 768px) {
+  .carousel-caption{
+    top: 45%;
+  }
+  .carousel-caption h1{
+    font-size: 350%
+  }
+  .carousel-caption h3{
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+  .carousel-caption .btn{
+    font-size: 95%;
+    padding: 8px 14px 8px 14px;
+  }
+  .display-4{
+    font-size: 200%;
+   }
+  .social a{
+    font-size: 2.5em;
+    padding: 1.2rem;
+
+}
+@media (max-width: 576px) {
+  .carousel-caption{
+    top: 40%;
+  }
+  .carousel-caption h1{
+    font-size: 250%
+  }
+  .carousel-caption h3{
+    font-size: 110%;
+  }
+  .carousel-caption .btn{
+    font-size: 90%;
+    padding: 4px 8px 4px 8px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  .display-4{
+    font-size: 160%;
+   }
+  .social a{
+    font-size: 2em;
+    padding: .7rem;
+
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;

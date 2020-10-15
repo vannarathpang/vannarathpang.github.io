@@ -1,0 +1,247 @@
+<!--
+ File: /~vpang/index.html
+ COMP 4610 Assignment 4: Change your webpage using Bootstrap
+ Vannarath Pang, UMass Lowell Computer Science, vpang@cs.uml.edu
+ Copyright (c) 2020 by Vannarath N Pang. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the author.
+ updated by VP on October 15th, 2020 at 7:30 PM
+
+ This webpage displays basic information regarding myself and my future assignments going forward.
+-->
+
+<!-- Used Drew Ryan's Bootstrap Intro as a basic foundation for website layout: https://www.youtube.com/watch?v=9cKsq14Kfsw -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vannarath's COMP4610 Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<!-- Sticks Nav bar to top, with a drop down menu for Homework Option, links 'jump' to certain sections of webpage rather than having separate pages for now -->
+<nav class="navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<a class="navbar-brand" href="index.html">COMP 4610</a>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#About">About</a>
+				</li>
+				<li class="nav-item dropdown">
+			 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				 Homework
+			 </a>
+			 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				 <a class="dropdown-item" href="#">Homework 2</a>
+				 <a class="dropdown-item" href="#">Homework 3</a>
+				 <a class="dropdown-item" href="#">Homework 4</a>
+				 <a class="dropdown-item" href="#">Homework 5</a>
+				 <a class="dropdown-item" href="#">Homework 6</a>
+				 <a class="dropdown-item" href="#">Homework 7</a>
+			 </div>
+		 </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--- carousel, displays two different images with a caption and button -->
+<!-- carousel first image is 'active' and slides to next image at a certain rate -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/Nate_1.jpg">
+			<div class="carousel-caption">
+				<h1 class="display-2">Vannarath Pang</h1>
+				<h3>COMP 4610 GUI Programming I</h3>
+				<button type="button" class="btn btn-primary btn-lg">Original CSS Page</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="img/Delilah_1.jpg">
+			<div class="carousel-caption">
+				<h1 class="display-2">Vannarath Pang</h1>
+				<h3>COMP 4610 GUI Programming I</h3>
+				<button type="button" class="btn btn-primary btn-lg">Original CSS Page</button>
+			</div>
+		</div>
+</div>
+</div>
+
+<!--- Intro/Welcome -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">Welcome to my page!</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p class="lead">This page will be the main index of my work for class COMP 4610 - GUI Programming I! This website will also feature some of my personal work which showcase my passion for photography and videography. <br><br> Thanks for stopping by!
+		</p>
+		</div>
+</div>
+</div>
+
+<!--- Occupations using 3 columns, using font awesome icons -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="far fa-keyboard"></i>
+		<h3>PROGRAMMER</h3>
+		<p>Currently in school for Programming.</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4">
+		<i class="fas fa-camera-retro"></i>
+		<h3>PHOTOGRAPHER</h3>
+		<p>Freelancing hobby of Photography.</p>
+	</div>
+	<div class="col-sm-12 col-md-4">
+		<i class="fas fa-video"></i></i>
+		<h3>VIDEOGRAPHER</h3>
+		<p>Freelancing hobby of Videography.</p>
+	</div>
+</div>
+<hr class="my-4">
+</div>
+
+<!--- About Me, simple two column row, text stacks to bottom at medium or smaller -->
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-lg-6">
+		<img src="img/Nate_2.jpg" alt="Picture of Me" class="img-fluid">
+	</div>
+	<div class="col-md-12 col-lg-6">
+		<h2 id="About">About Me</h2>
+		<p>Hey! My name is Vannarath Nathan Pang.</p>
+		<p>I'm a computer science major and currently in my senior year of university. I'm also an amateur freelance photographer and videographer. I guess you could say that I am a person with many interests.</p>
+		<p>Growing up, I've always had a passion for computers. Although it was mainly just playing video games, I've grown to love the process of creating and designing.
+		<p>It started with graphic designing. I always enjoyed making powerpoints for classes because I could have fun with customizing and designing them to be more visually pleasing, that way my audience wouldn't be so bored listening to me ramble for 15 minutes about stuff they don't care about.</p>
+		<p>Soon after, I got into video editing. I used to make AMV's which is short for Anime Music Videos. You'd basically just edit random clips from a show to match a song of choice. Sounds pretty lame, but I used to love; actually I still love anime to this day. It was definitely a trend back in the day to make AMVs on YouTube.</p>
+		<p>After graduating high school, I decided to dive into the world of programming. I'm not going to lie, it was extremely intimidating at first... however, I was assigned my first project; to create any program of my choice. I ended up making a little personality quiz app. To be honest, I had an absolute blast making it. It was so fun to customize and design my own program to my own liking. I hope to be able to design my own video game one day in the future.</p>
+		<p>I then started to become interested in vlogging as I started traveling. It soon sparked an interest in videography and photography. Having a background in video editing, it was pretty easy to edit my own videos with my own personal footage. It's amazing to be able to portray my own stories through my photos and videos for the world to see..</p>
+		<br>
+	</div>
+</div>
+</div>
+
+<hr class="my-4">
+
+<!--- Main Interests -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">My Main Interests</h1>
+	</div>
+	<hr>
+
+</div>
+</div>
+
+<!--- Main Interests, uses cards from Bootstrap Website -->
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-4">
+		<div class="card bg-light mb-3">
+			<div class="card-header text-center"><i class="fas fa-gamepad"></i></div>
+			<div class="card-body text-center">
+				<h4 class="card-title">Gaming</h4>
+				<p class="card-text"><strong>RPG games, Sandbox games, Strategy games;</strong> <br><br>
+					You name them. I love them all. Since I was a child, I loved playing video games on both consoles and computers; especially those that can be played online, and/or cooperatively.</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card bg-light mb-3">
+			<div class="card-header text-center"><i class="fas fa-camera"></i></div>
+			<div class="card-body text-center">
+				<h4 class="card-title">Photography/Videography</h4>
+				<p class="card-text"><strong>I love capturing important moments in life.</strong><br><br>
+          What started off as a mere hobby, evolved into something that I've become extremely passionate about. I am now an aspiring amateur photographer/videographer.</p>
+     </div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card bg-light mb-3">
+			<div class="card-header text-center"><i class="fas fa-headphones"></i></div>
+			<div class="card-body text-center">
+				<h4 class="card-title">Music</h4>
+				<p class="card-text"><strong>I enjoy many different genres of music;</strong><br><br>
+          Mainly pop and K-POP. I'm constantly listening to music throughout the day wherever I am. In the car, in my room, even in the shower! It's a necessity for me.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!--- Game Section, uses a collapse/spoiler button which displays hidden GIFs -->
+<button class="spoiler" data-toggle="collapse" data-target="#games"> Some of my favorite games (Click Here!)</button>
+<div id="games" class="collapse">
+<div class="container-fluid padding">
+<div class="row text-center">
+		<div class="col-sm-6 col-md-3">
+			<img class="gif" src="img/gif/divinity.gif" height="270">
+		</div>
+		<div class="col-sm-6 col-md-3">
+			<img class="gif" src="img/gif/stardew.gif">
+		</div>
+		<div class="col-sm-6 col-md-3">
+			<img class="gif" src="img/gif/Sims4.gif">
+		</div>
+		<div class="col-sm-6 col-md-3">
+			<img class="gif" src="img/gif/XCOM.gif">
+		</div>
+</div>
+</div>
+</div>
+
+<!--- Connect, links to social media in new tabs using font awesome icons -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h2 id="Contact">Social Media</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a href="https://www.facebook.com/dayumNate/" target="_blank"><i class="fab fa-facebook"></i></a>
+		<a href="https://twitter.com/natepangg" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.instagram.com/nate.pang/" target="_blank"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.youtube.com/channel/UCxUtqqK_CH_db_tFJrvo3CQ" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-12">
+		<h5>&copy; Copyright 2020</h5>
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>

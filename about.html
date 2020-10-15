@@ -1,0 +1,137 @@
+<!--
+ File: /~vpang/about.html
+ COMP 4610 Assignment 2: Creating Your First Web Page
+ Vannarath Pang, UMass Lowell Computer Science, vpang@cs.uml.edu
+ Copyright (c) 2020 by Vannarath N Pang. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the author.
+ updated by VP on September 22, 2020 at 7:30 PM
+
+ This webpage displays basic information regarding myself and my future assignments going forward.
+-->
+
+<!-- I followed the CSS Crash Course by Traversy Media on YouTube as a basic foundation for my website. https://youtu.be/yfoY53QXEnI -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <title>Vannarath Pang's Website</title>
+  <link rel="stylesheet" type="text/css" href="css/index_style.css">
+  <script src="script.js"></script>
+  </head>
+
+<!-- Body class, contains main header of website displayed at the top. -->
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <h1>&gt;&gt; Welcome to my world &lt;&lt;</h1>
+      </div>
+    </header>
+
+<!-- Main Navigation Bar with links using a -->
+  <nav id="navbar">
+    <div class="container">
+      <h3>COMP 4610</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Highlight, showcase of website -->
+  <section id="showcase">
+    <div class="container">
+      <h2>Vannarath Pang</h2>
+      <h6>COMP 4610 GUI Programming I</h6>
+    </div>
+  </section>
+
+<!-- Main About Me Section -->
+  <section id="about-main">
+    <div class="container">
+      <h2>About Me</h2>
+    </div>
+  </section>
+
+<!-- Main Image & Text -->
+  <section id="about-me">
+    <div class="container">
+      <img src="images/nathan.jpg" alt="Picture of myself" width="400" height="385">
+
+      <h3>Hey! My name is <i>Vannarath Nathan Pang.</i></h3>
+        <p> I'm a <b>computer science</b> major and currently in my senior year of university.
+        I'm also an <b>amateur freelance photographer and videographer</b>. I guess you could say that I am a person with many interests.
+
+        <br> Growing up, I've always had a passion for computers. Although it was mainly just playing video games, I've grown to love the process of creating and designing.
+        <br>
+        It started with <b>graphic designing</b>. I always enjoyed making powerpoints for classes because I could have fun with customizing and designing them to be more visually pleasing, that way my audience wouldn't be so bored listening to me ramble for 15 minutes about stuff they don't care about.
+
+        <br>
+        Soon after, I got into <b>video editing</b>. I used to make AMV's which is short for Anime Music Videos. You'd basically just edit random clips from a show to match a song of choice. Sounds pretty lame, but I used to love; actually I still love anime to this day. It was definitely a trend back in the day to make AMVs on YouTube.
+
+        <br>
+
+        After graduating high school, I decided to dive into the world of <b>programming</b>. I'm not going to lie, it was extremely intimidating at first... however, I was assigned my first project; to create any program of my choice. I ended up making a little personality quiz app. To be honest, I had an absolute blast making it. It was so fun to customize and design my own program to my own liking. I hope to be able to design my own video game one day in the future.
+
+        <br>
+
+         I then started to become interested in <b>vlogging</b> as I started traveling. It soon sparked an interest in videography and photography. Having a background in video editing, it was pretty easy to edit my own videos with my own personal footage. It's amazing to be able to portray my own stories through my photos and videos for the world to see.
+        </p>
+
+    </div>
+  </section>
+
+<!-- My Interests section, contains three div blocks -->
+  <section id="interest-header">
+    <div class="container">
+      <h2> My Main Interests </h2>
+    </div>
+  </section>
+
+  <section id="about-blocks">
+    <div class="container-2">
+      <div class ="block-1">
+        <img src='images/PS4-Controller.png' alt="PS4 Controller">
+        <h3>Gaming</h3>
+        <p><strong><em>RPG games, Sandbox games, Strategy games;</em></strong>
+          <br>
+          You name them. I love them all. Since I was a child, I loved playing video games on both consoles and computers; especially those that can be played online, and/or cooperatively.
+        </p>
+        </div>
+
+      <div class ="block-2">
+        <img src='images/Polaroid-Socialmatic.png' alt="Polaroid Camera">
+        <h3>Photography/Videography</h3>
+        <p><strong><em>I love capturing important moments in life.</em></strong>
+          <br>
+          What started off as a mere hobby, evolved into something that I've become extremely passionate about. I am now an aspiring amateur photographer/videographer.
+        </p>
+      </div>
+
+      <div class ="block-3">
+        <img src='images/Headphone-Big.png' alt="Headphones">
+        <h3>Music</h3>
+        <p><strong><em>I enjoy many different genres of music</em></strong>;
+          <br>
+          Mainly pop and K-POP. I'm constantly listening to music throughout the day wherever I am. In the car, in my room, even in the shower! It's a necessity for me.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer id="main-footer">
+  <p>Copyright &copy; 2020 My Website</p>
+  <p>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!"/>
+      </a>
+  </p>
+</footer>
+</body>
+</html>
