@@ -34,23 +34,23 @@ h3{
 
 /* Style table, adds a border and background color. */
 td {
-    border:1px solid black;
-    width:50px;
-    text-align:center;
-    background:#fff;
-    color: #555;
+  background:#fff;
+  color: #555;
+  border:1px solid black;
+  width:50px;
+  text-align:center;
 }
 /* Style column headers */
 td:first-child {
-    background: black;
-    color: #fff;
-    font-weight: bold;
+  background: black;
+  color: #fff;
+  font-weight: bold;
 }
 /* Style Row headers */
 tr:first-child > td{
-    background: black;
-    color: #fff;
-    font-weight: bold;
+  background: black;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* Sets opacity of empty child to 0 to make it invisible */
