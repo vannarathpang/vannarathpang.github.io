@@ -1,0 +1,93 @@
+<!-- File: /~vpang/index.html
+ COMP 4610 Assignment 6: Dynamic Multiplication Table w/ JQUERY exception
+ Vannarath Pang, UMass Lowell Computer Science, vpang@cs.uml.edu
+ Copyright (c) 2020 by Vannarath N Pang. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the author.
+ updated by VP on November 12th, 2020 at 7:30 PM
+
+ This webpage displays a dynamic multiplication table that catches errors if non numerical input is submitted.
+-->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>COMP 4610, HW 5</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- CSS link -->
+    <link href="css/HW5.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Main Container starts here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+    <h1> Dynamic Multiplication Table</h1>
+    <h3> Please enter a value between -50 to 50 for each starting and ending multiplier.</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <!-- BOOTSTRAP HORIZONTAL FORM USED -->
+    <form id="tableInput" name="tableInput" onsubmit="return false" class="form-horizontal">
+      <div class="form-group">
+        <label for="inputMinCol" class="col-sm-2 control-label">Min Column Value</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control" name="minCol" id="minCol" value="1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputMaxCol" class="col-sm-2 control-label">Max Column Value</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control" name="maxCol" id="maxCol" value="1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputMinRow" class="col-sm-2 control-label">Min Row Value</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control" name="minRow" id="minRow" value="1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputMaxRow" class="col-sm-2 control-label">Max Row Value</label>
+        <div class="col-sm-1">
+          <input type="number" class="form-control" name="maxRow" id="maxRow" value="1">
+        </div>
+      </div>
+  <!-- When pressed, button will call validate() function which calls the createTable() function -->
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" onclick="validate()">Calculate</button>
+      <br>
+      <!-- Used to display Error message -->
+      <p id="error"></p>
+    </div>
+  </div>
+</form>
+<br><br>
+</div>
+</div>
+<div class = "row">
+  <div class = "col-md-12">
+    <!-- Dynamic Table that is created is placed here -->
+    <div id="multTable">
+    </div>
+  </div>
+</div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- Include Jquery Validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.js"></script>
+    <script type='text/javascript' src="js/table_jQuery.js"></script>
+  </body>
+</html>
