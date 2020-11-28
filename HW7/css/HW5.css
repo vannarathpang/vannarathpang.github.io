@@ -1,0 +1,64 @@
+/*
+ File: /~vpang/HW5.css
+ COMP 4610 Assignment 5: Dynamic Multiplication Table
+ Vannarath Pang, UMass Lowell Computer Science, vpang@cs.uml.edu
+ Copyright (c) 2020 by Vannarath N Pang. All rights reserved. May be
+ freely copied or excerpted for educational purposes with credit to the author.
+ updated by VP on October 29th, 2020 at 7:30 PM
+
+ This webpage displays a dynamic multiplication table that catches errors if non numerical input is submitted.
+*/
+
+/* Background/Text Color */
+body{
+  background-image: url(../BMO.png);
+  color: #fff;
+}
+
+/* Heading */
+h1, h3{
+  text-align: center;
+  font-weight: bold;
+}
+
+h3{
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+/* change jquery validation error to red */
+label.error{
+  color:maroon;
+}
+
+/* Change error text to red */
+#error{
+  color: red;
+  font-weight: bold;
+}
+
+/* Style table, adds a border and background color. */
+td {
+  background:#fff;
+  color: #555;
+  border:1px solid black;
+  width:50px;
+  text-align:center;
+}
+/* Style column headers */
+td:first-child {
+  background: black;
+  color: #fff;
+  font-weight: bold;
+}
+/* Style Row headers */
+tr:first-child > td{
+  background: black;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Sets opacity of empty child to 0 to make it invisible */
+tr:first-child > td:first-child {
+  opacity: 0;
+}
